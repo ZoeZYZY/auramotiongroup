@@ -21,6 +21,25 @@ body {
 }
 
 /* HERO */
+.hero {
+    text-align: center;
+}
+
+.logo-wrapper {
+    display: inline-block;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    display: block;
+}
+
 .hero h1 {
     font-size: 48px;
     font-weight: 700;
@@ -31,6 +50,7 @@ body {
     font-size: 18px;
     color: #666;
     max-width: 600px;
+    margin: auto;
 }
 
 .divider {
@@ -129,7 +149,13 @@ footer a:hover {
 <body>
 
 <div class="container hero">
+
+    <div class="logo-wrapper">
+        <img src="/logo.png" class="logo" alt="Aura Motion Group Logo">
+    </div>
+
     <h1>Aura Motion Group Limited</h1>
+
     <p>
         Hong Kong Registered Digital Brand & Technology Group operating 
         global e-commerce brands and subscription-based AI software platforms.
