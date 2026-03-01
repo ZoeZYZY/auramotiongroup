@@ -19,12 +19,7 @@ body {
     background: linear-gradient(135deg, #000000 0%, #111111 100%);
     color: white;
     text-align: center;
-    padding: 140px 30px;
-}
-
-.logo {
-    height: 80px;
-    margin-bottom: 50px;
+    padding: 160px 30px;
 }
 
 .hero h1 {
@@ -121,8 +116,23 @@ footer a:hover {
     color: #fff;
 }
 
+/* COPYRIGHT ROW */
+.footer-bottom {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 30px;
+}
+
+.footer-logo {
+    height: 26px;
+    width: auto;
+    opacity: 0.8;
+}
+
 .copyright {
-    margin-top: 60px;
     font-size: 12px;
     opacity: 0.5;
 }
@@ -142,6 +152,12 @@ footer a:hover {
     .hero p {
         font-size: 16px;
     }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 </style>
 </head>
@@ -149,7 +165,6 @@ footer a:hover {
 <body>
 
 <div class="hero">
-    <img src="/logo.png" class="logo" alt="Aura Motion Group Logo">
     <h1>Aura Motion Group Limited</h1>
     <p>
         Hong Kong Registered Digital Brand & Technology Group operating 
@@ -237,8 +252,11 @@ footer a:hover {
 
         </div>
 
-        <div class="copyright">
-            © 2026 Aura Motion Group Limited. All rights reserved.
+        <div class="footer-bottom">
+            <img src="/logo.png" class="footer-logo" alt="Aura Motion Group Logo">
+            <div class="copyright">
+                © 2026 Aura Motion Group Limited. All rights reserved.
+            </div>
         </div>
 
     </div>
