@@ -10,68 +10,55 @@
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: #ffffff;
     color: #111;
 }
 
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #000000 0%, #111111 100%);
+    color: white;
+    text-align: center;
+    padding: 140px 30px;
+}
+
+.logo {
+    height: 80px;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* MAIN SECTION */
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 100px 30px;
 }
 
-/* HERO */
-.hero {
-    text-align: center;
-}
-
-.logo-wrapper {
-    display: inline-block;
-    background: white;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    margin-bottom: 50px;
-}
-
-.logo {
-    height: 70px;
-    width: auto;
-    display: block;
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #666;
-    max-width: 600px;
-    margin: auto;
-}
-
 .divider {
     height: 1px;
-    background: #ddd;
+    background: #eee;
     margin: 80px 0;
 }
 
-/* SECTION TITLE */
 .section-title {
     font-size: 14px;
     letter-spacing: 2px;
     color: #888;
     margin-bottom: 40px;
-}
-
-/* GRID */
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
 }
 
 .grid-3 {
@@ -80,12 +67,17 @@ body {
     gap: 40px;
 }
 
-/* CARD */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
 .card {
-    background: white;
+    background: #fafafa;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
 }
 
 .card h3 {
@@ -142,20 +134,23 @@ footer a:hover {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="container hero">
-
-    <div class="logo-wrapper">
-        <img src="/logo.png" class="logo" alt="Aura Motion Group Logo">
-    </div>
-
+<div class="hero">
+    <img src="/logo.png" class="logo" alt="Aura Motion Group Logo">
     <h1>Aura Motion Group Limited</h1>
-
     <p>
         Hong Kong Registered Digital Brand & Technology Group operating 
         global e-commerce brands and subscription-based AI software platforms.
